@@ -1,0 +1,343 @@
+@import url(//db.onlinewebfonts.com/c/158f3680b112e3baa610155c4e573207?family=Microsoft+JhengHei);
+
+$lbgcolor:#CC0000;
+$navActive:#666666; 
+$navInactive:#CC0000;
+$suButton:#169BD5;
+$tableHead:#F2F2F2;
+$reusCompAni:#FF0000;
+$inputColor:#ffffff;
+$paraFontsize:14px;
+$h1FontSize:48px;
+$h3FontSize:18px;
+$h2FontSize:24px;
+$label:18px;
+$navLiFontSize:28px;
+$fontFamily:"Microsoft JhengHei";
+$fontFamilyArial:"arial";
+
+body{
+  font-family:$fontFamilyArial;
+  background-image: url(../src/assets/images/bg.jpeg);
+}
+
+.commonClass{
+  background-color:#ddd;
+  padding:30px;
+}
+
+h3,h2,h1,table,ul,li,p{
+  margin:0;
+  padding:0;
+}
+
+h1{
+  font-family:$fontFamily;
+  font-size:$h1FontSize;
+  color:$inputColor;
+  line-height:30px;
+}
+
+h2{
+  font-size:$h2FontSize;
+}
+
+h3{
+  font-size:$h3FontSize;
+}
+
+p{
+  margin-bottom:15px;
+}
+
+//header section
+header{
+    width: 300px;
+    height: 115px;
+    padding: 20px;
+    background-color:$lbgcolor;
+}
+
+header p{
+  font-size:$paraFontsize;
+  color:$inputColor;
+  font-family:$fontFamily;
+}
+
+
+
+//login container
+
+.login-container{
+  width: 750px;
+  height: 326px;
+  background-color:$lbgcolor;
+  padding: 20px;
+}
+
+.errorHandle{
+  background-color: #ea3f5d;
+  padding: 15px 10px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 20px 0 35px;
+ }
+
+.succForm{
+  background-color: green;
+  display: block;
+}
+
+.login-container{
+  form{
+    display:flex;
+    flex-direction:column;
+    margin-top:35px;
+    label{
+      font-size:$label;
+      font-family:$fontFamilyArial;
+      color:$inputColor;
+      font-weight:300;
+      width:100px;
+    }
+    input{
+      padding:5px;
+      background-color:$inputColor;
+      color:#666;
+      font-size:$label;
+      border:0;
+    }
+    .loginBtn{
+      background-color:#CC9900;
+      border-color: #775900;
+      color:#fff;
+      padding: 5px 40px;
+      align-self: flex-end;
+    }
+    .loginBtn:hover{
+      background-color:#fff;
+      color:#FF0000;
+    }
+    .form-group{
+      margin-bottom:30px;
+    }
+  }
+}
+
+
+
+
+// dashboard
+
+.dashboard{
+  clear:both;
+}
+
+// navigation
+
+
+
+.navList {
+        padding:20px !important;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color:#eee;
+        width:300px;
+    nav{
+      ul{
+    
+
+      li{
+          display:block;
+          padding:10px 5px;
+          border-bottom:1px solid #ddd;
+        a{
+          font-size:$navLiFontSize;
+          text-transform: uppercase;
+          color:$navInactive;
+        }
+        a.active{
+          color:$navActive !important;
+        }
+        a:hover{
+          text-decoration:none;
+          color:$navActive !important;
+        }
+      }
+      li:last-child{
+        border-bottom:0;
+      }
+    }
+  }
+}
+
+
+
+// main content css
+
+.mainContent{
+  width:72%;
+  margin-left:18px;
+  background-color:#eee;
+}
+
+// dashboard
+
+.fa-file-image-o{
+  font-size:60px;
+  color: #0a82b3;
+  border: 5px solid #ccc;
+}
+
+.sub-datalist{
+   form{
+     label{
+       color:#333;
+       font-size:14px;
+       margin:0;
+       width:100%;
+     }
+     input{
+       margin-right:5px;
+     }
+     button{
+       width:100px;
+       margin-top:10px;
+     }
+   }
+
+}
+
+.u-details{
+  display:flex;
+
+  .dashHeading{
+    align-self:center;
+  }
+}
+
+.u-accnt-total{
+  h3{
+    color:$lbgcolor;
+  }
+}
+
+.u-other-info {
+  h3{
+    margin-bottom:20px;
+  }
+  .sub-data{
+    label{
+      margin-left:10px;
+    }
+  }
+  p{
+    padding-top:15px;
+  }
+}
+
+table{
+  margin-top:30px;
+  thead{
+    background-color:#ddd;
+    font-weight:700;
+    
+  }
+  tbody{
+    background-color:#fff;
+  }
+  th, td{
+    border:1px solid #333 !important;
+  }
+}
+
+// about css
+
+.about-img, img{
+  border:1px solid #333;
+  
+}
+
+.reusable{
+  clear:both;
+  padding-top:20px;
+  .reu-cmp{
+    display: flex;
+    margin-top:20px;
+    div{
+      height: 150px;
+      width: 150px;
+      background-color: #dfdf29;
+      box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.58);
+      margin-right:10px;
+    }
+    div:last-child{
+      margin-right:0;
+    }
+  }
+}
+
+//team css
+
+.teamList {
+  ul{
+    li{
+      padding: 8px 0;
+      font-size:18px;
+    }
+    li:before{
+      content: '\f1c5';
+      font-size: 15px;
+      font-family: fontawesome;
+      border: 1px solid #333;
+      padding: 7px 8px;
+      border-radius: 50%;
+      color: #11a5e2;
+      margin-right:8px;
+    }
+  }
+}
+
+
+//common css
+
+ul{
+  list-style:none;
+}
+
+a:focus{
+  outline:none;
+  text-decoration:none;
+}
+
+.borderBottom{
+  border-bottom: 1px solid rgba(102, 102, 102, 0.42);
+  border-top:0;
+    clear: both;
+    margin: 0;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boxPadding{
+  padding:20px; 
+}
+
+.noPadding{
+  padding:0;
+}
+
+img{
+  width:100%;
+  height:150px;
+  object-fit: cover;
+}
+
+.mainCom{
+  width:73%;
+}
+
+
+
+
+
