@@ -34,9 +34,7 @@ class Header extends Component{
     }
 }
 
-Header.contextTypes = {
-    router: PropTypes.object
-};
+
 
 function mapStateToProps(state){
     return{

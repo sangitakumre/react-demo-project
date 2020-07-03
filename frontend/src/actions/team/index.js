@@ -23,7 +23,7 @@ export const teamFetchRequest = () =>{
   export const fetchTeam = () => {
     return (dispatch) =>{
       dispatch(teamFetchRequest)
-      axios.get('http://localhost:9000/team')
+      axios.get('/team')
       .then(response => {
         const team = response.data  
         //console.log(teamList)

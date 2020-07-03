@@ -5,7 +5,7 @@ export const login = data =>{
     return async dispatch =>{
         try{
             console.log('action creator is login called')
-          const res = await axios.post('http://localhost:9000/', data);
+          const res = await axios.post('/', data);
           console.log('res', res)
          
           console.log('action creator is dispatch called')
